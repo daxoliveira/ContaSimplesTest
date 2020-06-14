@@ -1,11 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-class MainSection extends Component {
-    render () {
-        return (
-            <div>MainSection</div>
-        )
+const Main = styled.main`
+    margin: 0 auto;
+    width: 100%;
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
     }
+`;
+
+const MainSection = () => {
+  return (
+      <Main>
+        Nav Bar
+      </Main>
+  )
 }
 
 export default MainSection

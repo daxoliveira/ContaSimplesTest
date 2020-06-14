@@ -22,9 +22,7 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">
-        Nav Bar
-      </div>
+      <img src="../../logo.svg" alt="Conta Simples Logo"/>
       <Burger />
     </Nav>
   )

@@ -29,10 +29,12 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+      <li>Minha Conta</li>
+      <li>Cartão de Crédito</li>
+      <li>Gestão de Cobrança</li>
+      <li>Benefícios</li>
+      <li>Tarifas</li>
+      <li>Logout</li>
     </Ul>
   )
 }
