@@ -1,17 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import logo from '../../logo.svg';
 
 const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
-  .logo {
-    padding: 15px 0;
+  padding: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .2rem solid #45b34a;
+
+  img {
+    display: block;
+    float: left;
+    padding: 4px 20px 5px 0;
+    width: 190px;
+    opacity: .9;
+    margin-left: .4rem;
+  }
+
+  .container {
+    position: fixed;
+    z-index: 999;
   }
 
   @media (min-width: 1200px) {
@@ -21,8 +34,8 @@ const Nav = styled.nav`
 
 const Navbar = () => {
   return (
-    <Nav>
-      <img src="../../logo.svg" alt="Conta Simples Logo"/>
+    <Nav className="container">
+      <img src={ logo } alt="Logo Conta Simples"/>
       <Burger />
     </Nav>
   )

@@ -5,12 +5,34 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+
   li {
     padding: 18px 10px;
   }
+
+  .button {
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #45b34a;
+    border-radius: 0.3rem;
+    border: 1px solid #45b34a;
+    padding: .9rem;
+    cursor: pointer;
+    transition: background-color 250ms;
+    background-color: #fff;
+  }
+
+  .button:hover {
+    background-color: #62bd07;
+    color: #fff;
+    border: .1rem solid #7be115;
+    border-radius: 0.3rem;
+  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: #315126;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -19,22 +41,18 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
-    }
+
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>Minha Conta</li>
-      <li>Cartão de Crédito</li>
-      <li>Gestão de Cobrança</li>
-      <li>Benefícios</li>
-      <li>Tarifas</li>
-      <li>Logout</li>
+      <li><a href="#" className="button">HOME</a></li>
+      <li><a href="#" className="button">MINHA CONTA</a></li>
+      <li><a href="#" className="button">CARTÃO DE CRÉDITO</a></li>
+      <li><a href="#" className="button">GESTÃO DE COBRANÇAS</a></li>
+      <li><a href="#" className="button">LOGOUT</a></li>
     </Ul>
   )
 }
