@@ -1,21 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
+import Login from '../Login';
 
-const Main = styled.main`
-    margin: 0 auto;
-    width: 100%;
-
-  @media (min-width: 1200px) {
-    max-width: 1140px;
-    }
-`;
-
-const MainSection = () => {
-  return (
-      <Main>
-        Nav Bar
-      </Main>
-  )
+const MainSection = (props) => {
+  const { logged, usuario, checkLogin } = props;
+    return(
+      <div>
+        {
+          logged
+            ? 
+            (<div><h1>Bem vindo {usuario.nome}</h1></div>)
+            : 
+            <Login checkLogin={checkLogin} />
+        }
+      </div>
+    );
 }
 
-export default MainSection
+export default MainSection;

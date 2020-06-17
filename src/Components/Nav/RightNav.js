@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -48,11 +50,12 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><a href="#" className="button">HOME</a></li>
-      <li><a href="#" className="button">MINHA CONTA</a></li>
-      <li><a href="#" className="button">CARTÃO DE CRÉDITO</a></li>
-      <li><a href="#" className="button">GESTÃO DE COBRANÇAS</a></li>
-      <li><a href="#" className="button">LOGOUT</a></li>
+      <li><Link to="/" className="button">HOME</Link></li>
+      <li><Link to="#" className="button">MINHA CONTA</Link></li>
+      <li><Link to="#" className="button">CARTÃO DE CRÉDITO</Link></li>
+      <li><Link to="#" className="button">GESTÃO DE COBRANÇAS</Link></li>
+      <li><Link to="/login" className="button">LOGIN</Link></li>
+      <li><Link to="#" className="button">LOGOUT</Link></li>
     </Ul>
   )
 }

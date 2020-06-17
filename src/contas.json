@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Dax Oliveira",
+    "agencia": "0001",
+    "conta": "1234-5",
+    "email": "dax.oliveira.br@gmail.com",
+    "senha": "1234",
+    "clientes": [
+      {
+        "nome": "abcd",
+        "data": "12/12/2019",
+        "valor": 123,
+        "pagou": 123,
+        "quitado": true
+      },
+      {
+        "nome": "abcd",
+        "data": "12/12/2019",
+        "valor": 123,
+        "pagou": 123,
+        "quitado": true
+      },
+      {
+        "nome": "abcd",
+        "data": "12/12/2019",
+        "valor": 123,
+        "pagou": 123,
+        "quitado": true
+      }
+    ],
+    "compras": [
+      {
+        "produto": "abcd",
+        "data": "12/12/2019",
+        "valor": 123
+      },
+      {
+        "produto": "abcd",
+        "data": "12/12/2019",
+        "valor": 123
+      },
+      {
+        "produto": "abcd",
+        "data": "12/12/2019",
+        "valor": 123
+      }
+    ]
+  },
+  {
+    "nome": "Heitor Godau",
+    "agencia": "0002",
+    "conta": "9876-5",
+    "email": "heitorgodau@gmail.com",
+    "senha": "1234"
+  }
+]
