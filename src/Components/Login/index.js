@@ -35,10 +35,12 @@ class Login extends React.Component {
           Agencia:
           <input type="text" name="agencia" value={ agencia } onChange={this.handleChange}/>
         </label>
+        <br/>
         <label>
           Conta:
           <input type="text" name="conta" value={ conta } onChange={this.handleChange}/>
         </label>
+        <br/>
         <label>
           Senha:
           <input type="password" name="senha" value={ senha } onChange={this.handleChange}/>

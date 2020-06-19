@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 class MinhaConta extends Component {
     render () {
         return (
-            <div>MinhaConta</div>
+            <div>
+                <h1>Heitor Godau</h1>
+            </div>
         )
     }
 }

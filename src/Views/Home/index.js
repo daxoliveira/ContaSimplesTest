@@ -1,7 +1,7 @@
 import React from 'react';
-import Login from '../Login';
+import Login from '../../Components/Login/';
 
-const MainSection = (props) => {
+const Home = (props) => {
   const { logged, usuario, checkLogin } = props;
     return(
       <div>
@@ -16,4 +16,4 @@ const MainSection = (props) => {
     );
 }
 
-export default MainSection;
+export default Home;

@@ -47,17 +47,17 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
-  return (
-    <Ul open={open}>
-      <li><Link to="/" className="button">HOME</Link></li>
-      <li><Link to="#" className="button">MINHA CONTA</Link></li>
-      <li><Link to="#" className="button">CARTÃO DE CRÉDITO</Link></li>
-      <li><Link to="#" className="button">GESTÃO DE COBRANÇAS</Link></li>
-      <li><Link to="/login" className="button">LOGIN</Link></li>
-      <li><Link to="#" className="button">LOGOUT</Link></li>
+const RightNav = (props) => {
+return props.logged 
+  ? (
+    <Ul open={props.open}>
+      <li><Link to="/minhaconta" className="button" onClick={() => props.setOpen(false)}>MINHA CONTA</Link></li>
+      <li><Link to="/cartaodecredito" className="button">CARTÃO DE CRÉDITO</Link></li>
+      <li><Link to="/gestaodecobrancas" className="button">GESTÃO DE COBRANÇAS</Link></li>
+      <li><Link to="/" className="button" onClick={props.logout}>LOGOUT</Link></li>
     </Ul>
   )
+  : null
 }
 
 export default RightNav
