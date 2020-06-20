@@ -2,7 +2,7 @@ import React from 'react';
 import Burger from './Burger';
 import logo from '../../logo.svg';
 import { Link } from 'react-router-dom';
-import "./navbar.css";
+import "./index.css";
 
 const Navbar = (props) => {
   return (

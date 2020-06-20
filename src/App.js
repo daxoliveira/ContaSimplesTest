@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Nav/Navbar';
+
+import Navbar from './Components/Nav/';
+
 import Home from './Views/Home/';
 import MinhaConta from './Views/MinhaConta/';
-import Footer from './Components/Footer/Footer';
+import CartaoDeCredito from './Views/CartaoDeCredito/';
+import GestaoDeCobrancas from './Views/GestaoDeCobrancas/';
+
+import Footer from './Components/Footer/';
+
 import contas from './contas.json';
 import './index.css';
 
@@ -38,8 +44,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" render={() => <Home usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
           <Route exact path="/minhaconta" render={() => <MinhaConta usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
-          {/* <Route exact path="/credito" render={() => <Credito usuario={this.state.usuario}/>} />
-          <Route exact path="/clientes" render={() => <Clientes usuario={this.state.usuario}/>} /> */}
+          <Route exact path="/cartaodecredito" render={() => <CartaoDeCredito usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
+          <Route exact path="/gestaodecobrancas" render={() => <GestaoDeCobrancas usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
         </Switch>
         <Footer />
       </div>
