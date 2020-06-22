@@ -4,10 +4,8 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      agencia: "",
-      conta: "",
+      email: "",
       senha: "",
-
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -27,18 +25,13 @@ class Login extends React.Component {
   }
 
   render(){
-    const { agencia, conta, senha } = this.state;
+    const { email, senha } = this.state;
     
     return(
       <form onSubmit={this.handleSubmit}>
         <label>
-          Agencia:
-          <input type="text" name="agencia" value={ agencia } onChange={this.handleChange}/>
-        </label>
-        <br/>
-        <label>
-          Conta:
-          <input type="text" name="conta" value={ conta } onChange={this.handleChange}/>
+          E-mail:
+          <input type="text" name="email" value={ email } onChange={this.handleChange}/>
         </label>
         <br/>
         <label>

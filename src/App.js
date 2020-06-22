@@ -26,8 +26,8 @@ class App extends Component {
   }
 
   checkLogin(usuarioLogged) {
-    const { agencia, conta, senha } = usuarioLogged;
-    const loggedin = contas.filter((e) => e.agencia === agencia && e.conta === conta && e.senha === senha)
+    const { email, senha } = usuarioLogged;
+    const loggedin = contas.filter((e) => e.email === email && e.senha === senha)
     loggedin.length > 0 ? this.setState({logged: true, usuario: loggedin[0]}) : this.setState({logged: false, usuario: {}})
   }
 
@@ -35,14 +35,14 @@ class App extends Component {
     this.setState({logged: false, usuario:{}})
   }
   
-  render() {
-    console.log(this.state);
-    
+  render() {    
     return (
       <div className="App">
         <Navbar logged={this.state.logged} logout={this.logout}/>
         <Switch>
-          <Route exact path="/" render={() => <Home usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
+          <Route exact path="/" render={() => <Home usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin}/>} />
+
+
           <Route exact path="/minhaconta" render={() => <MinhaConta usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
           <Route exact path="/cartaodecredito" render={() => <CartaoDeCredito usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />
           <Route exact path="/gestaodecobrancas" render={() => <GestaoDeCobrancas usuario={this.state.usuario} logged={this.state.logged} checkLogin={this.checkLogin} />} />

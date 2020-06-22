@@ -1,56 +1,135 @@
 [
   {
     "nome": "Dax Oliveira",
+    "email": "dax.oliveira.br@gmail.com",
     "agencia": "0001",
     "conta": "1234-5",
-    "email": "dax.oliveira.br@gmail.com",
-    "senha": "1234",
-    "clientes": [
+    "senha": "conta",
+    "minhaconta": [
       {
-        "nome": "abcd",
-        "data": "12/12/2019",
-        "valor": 123,
-        "pagou": 123,
-        "quitado": true
+        "id": 1,
+        "transacao": "Transferência Recebida",
+        "empresa": "Gove",
+        "valor" : "2.032,00",
+        "data": "18 FEV"
       },
       {
-        "nome": "abcd",
-        "data": "12/12/2019",
-        "valor": 123,
-        "pagou": 123,
-        "quitado": true
+        "transacao": "Transferência Enviada",
+        "empresa": "Hrestart",
+        "valor" : "3.032,00",
+        "data": "19 FEV"
       },
       {
-        "nome": "abcd",
-        "data": "12/12/2019",
-        "valor": 123,
-        "pagou": 123,
-        "quitado": true
+        "transacao": "Transferência Recebida",
+        "empresa": "Linker",
+        "valor" : "2.032,00",
+        "data": "20 FEV"
+      },
+      {
+        "transacao": "Transferência Enviada",
+        "empresa": "Creators",
+        "valor" : "2.032,00",
+        "data": "21 FEV"
+      },
+      {
+        "transacao": "Transferência Recebida",
+        "empresa": "Gove",
+        "valor" : "2.032,00",
+        "data": "18 FEV"
+      },
+      {
+        "transacao": "Transferência Enviada",
+        "empresa": "Hrestart",
+        "valor" : "3.032,00",
+        "data": "19 FEV"
+      },
+      {
+        "transacao": "Transferência Recebida",
+        "empresa": "Linker",
+        "valor" : "2.032,00",
+        "data": "20 FEV"
+      },
+      {
+        "transacao": "Transferência Enviada",
+        "empresa": "Creators",
+        "valor" : "2.032,00",
+        "data": "21 FEV"
       }
     ],
-    "compras": [
+    "cartaodecredito": [
       {
-        "produto": "abcd",
-        "data": "12/12/2019",
-        "valor": 123
+        "nomedaempresa": "Adobe Creative Collection",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
       },
       {
-        "produto": "abcd",
-        "data": "12/12/2019",
-        "valor": 123
+        "nomedaempresa": "Uber Inc.",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
       },
       {
-        "produto": "abcd",
-        "data": "12/12/2019",
-        "valor": 123
+        "nomedaempresa": "FaceBook Inc.",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
+      },
+      {
+        "nomedaempresa": "SalesForce Inc.",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
+      },
+      {
+        "nomedaempresa": "Etna S/A",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
+      },{
+        "nomedaempresa": "Sodexo",
+        "valor": "2.799,99",
+        "data": "21 MAR"
+        
+      }
+    ],
+    "gestaodecobrancas": [
+      {
+        "iniciais": "ChatClass",
+        "vencimento": "03 de Fevereiro de 2020",
+        "valor": "1.200,49",
+        "situacao": "ATRASADO"
+      },
+      {
+        "iniciais": "Convenia",
+        "vencimento": "07 de Fevereiro de 2020",
+        "valor": "1.700,49",
+        "situacao": "PAGO"
+      },
+      {
+        "iniciais": "Creators",
+        "vencimento": "11 de Fevereiro de 2020",
+        "valor": "2.401,00",
+        "situacao": "ATRASADO"
+      },
+      {
+        "iniciais": "Cuidas",
+        "vencimento": "14 de Fevereiro de 2020",
+        "valor": "3.700,49",
+        "situacao": "PAGO"
+      },
+      {
+        "iniciais": "Vittude",
+        "vencimento": "16 de Fevereiro de 2020",
+        "valor": "4.100,49",
+        "situacao": "PAGO"
+      },
+      {
+        "iniciais": "Yubb",
+        "vencimento": "21 de Fevereiro de 2020",
+        "valor": "1.700,49",
+        "situacao": "ATRASADO"
       }
     ]
-  },
-  {
-    "nome": "Heitor Godau",
-    "agencia": "0002",
-    "conta": "9876-5",
-    "email": "heitorgodau@gmail.com",
-    "senha": "1234"
   }
 ]
