@@ -57,10 +57,16 @@
   Esse é o próximo passo para continuar melhorando a aplicação.
 
 ## Testando a aplicação
-  1 - Baixando esse repositório na sua máquina e usando os dados contidos no arquivo ''contas.json' para fazer o login.
+  ### 1 - LOCAL - Baixando esse repositório na sua máquina e usando os dados contidos no arquivo ''contas.json' para fazer o login.
 
-  2 - Acesse o link, click no logo "ContaSimples" e use a informação de login abaixo:
-    - [Link: ](http://daxoliveira.github.io/ContaSimplesTest)
-    - E-mail: dax.oliveira.br@gmail.com e Senha: conta
+  ### 2 - ON-LINE - Siga as instruções abaixo:
+  #### Passo 1 - Click no link abaixo acessar URL onde a aplicação está hospedada.   
+  [http://daxoliveira.github.io/ContaSimplesTest](http://daxoliveira.github.io/ContaSimplesTest)
+  
+  #### Passo 2 - Click no logo "Conta Simples"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  #### Passo 3 - Faça o login usando as informações da conta abaixo:  
+    E-mail: dax.oliveira.br@gmail.com  
+    Senha: conta
+
+***This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
