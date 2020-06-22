@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ContaSimplesTest/static/css/main.482e58a0.chunk.css",
+    "main.js": "/ContaSimplesTest/static/js/main.e97681d5.chunk.js",
+    "main.js.map": "/ContaSimplesTest/static/js/main.e97681d5.chunk.js.map",
+    "runtime-main.js": "/ContaSimplesTest/static/js/runtime-main.4cd01688.js",
+    "runtime-main.js.map": "/ContaSimplesTest/static/js/runtime-main.4cd01688.js.map",
+    "static/js/2.7d099c65.chunk.js": "/ContaSimplesTest/static/js/2.7d099c65.chunk.js",
+    "static/js/2.7d099c65.chunk.js.map": "/ContaSimplesTest/static/js/2.7d099c65.chunk.js.map",
+    "index.html": "/ContaSimplesTest/index.html",
+    "precache-manifest.e5e3823a9dbad2c0ecbfa1415033ef8c.js": "/ContaSimplesTest/precache-manifest.e5e3823a9dbad2c0ecbfa1415033ef8c.js",
+    "service-worker.js": "/ContaSimplesTest/service-worker.js",
+    "static/css/main.482e58a0.chunk.css.map": "/ContaSimplesTest/static/css/main.482e58a0.chunk.css.map",
+    "static/js/2.7d099c65.chunk.js.LICENSE.txt": "/ContaSimplesTest/static/js/2.7d099c65.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ContaSimplesTest/static/media/logo.4f59c0d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cd01688.js",
+    "static/js/2.7d099c65.chunk.js",
+    "static/css/main.482e58a0.chunk.css",
+    "static/js/main.e97681d5.chunk.js"
+  ]
+}
