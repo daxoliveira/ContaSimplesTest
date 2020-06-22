@@ -1,68 +1,66 @@
+# Teste para Front-end - Conta Simples
+
+### O desafio consiste em criar a Home do Internet Banking da Conta Simples.
+
+## Entregáveis
+- Apresentar as informações que você achar conveniente. 
+- Você pode fazer uma tela de login também. 
+- Se conseguir disponibilizar isso em alguma URL para acesso, melhor ainda. 
+- Pode também apresentar os dados mockado; não precisa consultar nenhuma API.
+
+## Critérios de Avaliação
+- Nosso foco é identificar suas habilidade não só em programação, mas também comportamental, portanto, iremos analisar os seguintes critérios:
+- Capacidade em auto-aprendizado;
+- Comprometimento: Fazer mais do que o combinado;
+- Organização do código: Separação de módulos, view e model, back-end e front-end
+- Clareza: O README explica de forma resumida qual é o problema e como pode rodar a aplicação?
+- Assertividade: A aplicação está fazendo o que é esperado? Se tem algo faltando, o README explica o porquê?
+- Legibilidade do código (incluindo comentários)
+- Segurança: Existe alguma vulnerabilidade clara?
+- Cobertura de testes (Não esperamos cobertura completa)
+- Histórico de commits (estrutura e qualidade)
+- UX: A interface é de fácil uso e auto-explicativa
+- Importante ressaltar que todo o conhecimento adquirido neste desafio, será utilizado nas atividades do dia-a-dia aqui na Conta Simples.
+
+## Meu processo de desenvolvimento do projeto/teste de acordo com os commits
+
+### Commit 01 - Initialize project using Create React App
+  Criar a base do projeto/teste usando '’create-react-app’'.
+
+### Commit 02 - Create basic main components from wireframe
+  Criação de um wireframe que irá mostrar de forma simples como vou estruturar essa SPA, e quais componentes eu devo criar. Também já incluindo as mesmas cores usadas pela empresa em uma pequena paleta já nesse primeiro momento.
+
+### Commit 03 - Create navigation bar first version
+  Desenvolver o que foi descrito no wireframe. 
+
+### Commit 04 - Create navigation bar second version
+  Depois de pesquisar sobre a empresa, serviços oferecidos, sua página online e tentei reproduzir algo que seja fosse parecido com o layout do site da mesma.
+  
+### Commit 05 - Complete Navigation Bar
+  Esse commit também incluiu a criação dos arquivos que correspodem a cada link da barra de navegação.
+
+### Commit 06 - Complete navigation bar styling
+  Estilização da barra de navegação feita com 'Styling Components'
+
+### Commit 07 - Complete login functionality
+  Uma fase um pouco mais complicada para mim, algo que ainda não fiz muito em React. Especialmente porque não há um consenso sobre a melhor maneira de implementar essa parte da aplicação. Pelo menos eu não encontrei nenhum material que seguisse a mesma estruturação que outro.
+
+### Commit 08 - Structure components and routes
+  Também uma parte em que tive um pouco de dificuldades, as mudanças que eu adotei sobre como deveria ser a jornada do usuário não contribuíram para uma maior eficiência nessa etapa.
+
+### Commit 09 - Create views for each section of the app
+  Depois da decisão de usar ''views'' para estruturação do projeto, a visualização dos aplicação ficou bem mais fácil.
+
+### Commit 10 - Start implementation of transactions rendering
+  Esse foi o ponto de parada do meu teste. Apesar de eu ter dedicado uma boa parte do meu tempo nessa etapa, eu não descobri uma forma de resolver o problema ''Type Error: Cannot read property 'map' of undefined''. Escrevi e reescrevi o código várias vezes, e apesar passar como props do arquivo de dados para view ''MinhaConta'', eu não consegui renderizá-los por causa desse erro.
+  
+  Esse é o próximo passo para continuar melhorando a aplicação.
+
+## Testando a aplicação
+  1 - Baixando esse repositório na sua máquina e usando os dados contidos no arquivo ''contas.json' para fazer o login.
+
+  2 - Acesse o link e a informação de login abaixo:
+    - [Link: ]()
+    - E-mail: dax.oliveira.br@gmail.com e Senha: conta
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
